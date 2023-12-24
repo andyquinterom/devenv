@@ -67,6 +67,7 @@ sudo apt-get update && sudo apt-get install -y google-cloud-cli
 
 ## Neovim
 sudo snap install --edge nvim --classic
+./neovim
 
 ## Setup symlinks
 ./symlinks.sh

@@ -40,7 +40,13 @@ sudo apt-get install -y \
     ca-certificates \
     gnupg \
     ffmpeg \
-    r-base
+    r-base \
+    pkg-config \
+    libfreetype6-dev \
+    libfontconfig1-dev \
+    libxcb-xfixes0-dev \
+    libxkbcommon-dev \
+    python3
 
 ## i3
 sudo apt-get install -y \

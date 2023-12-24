@@ -9,9 +9,6 @@ ln -sf $(pwd)/nvim $HOME/.config/nvim
 # .profile
 ln -sf $(pwd)/profile $HOME/.profile
 
-# .zshrc
-ln -sf $(pwd)/zshrc $HOME/.zshrc
-
 # Alacritty
 ln -sf $(pwd)/alacritty $HOME/.config/alacritty
 

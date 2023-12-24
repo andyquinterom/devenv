@@ -26,6 +26,7 @@ sudo usermod -aG docker $USER
 ## Devtools
 
 sudo apt-get install -y \
+    fish \
     build-essential \
     cmake \
     git-all \
@@ -74,4 +75,5 @@ export KEYMAP=latam
 localectl set-x11-keymap $KEYMAP
 sudo localectl set-x11-keymap $KEYMAP
 
-
+## Git
+./git.sh

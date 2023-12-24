@@ -75,5 +75,12 @@ export KEYMAP=latam
 localectl set-x11-keymap $KEYMAP
 sudo localectl set-x11-keymap $KEYMAP
 
+## Change /etc/default/keyboard
+# XKBLAYOUT=latam
+# BACKSPACE=guess
+echo "XKBLAYOUT=latam" | sudo tee /etc/default/keyboard
+echo "BACKSPACE=guess" | sudo tee -a /etc/default/keyboard
 ## Git
 ./git.sh
+
+

@@ -48,6 +48,7 @@ sudo apt-get install -y \
     i3status \
     nitrogen \
     picom \
+    rofi \
     dex
 
 ## Azure CLI

@@ -188,3 +188,7 @@ for_window [class="zoom" title="Zoom Meeting"] floating disable
 bar {
         status_command i3status
 }
+
+# Brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-

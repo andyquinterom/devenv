@@ -1,5 +1,16 @@
 #!/bin/bash
 
 ## NodeJS
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-npm install -g typescript-language-server typescript # ts server
+cargo install fnm
+
+## Source fnm
+eval "`fnm env --shell bash`"
+
+## Install node 20
+fnm install 20
+
+## Use node 20
+fnm use 20
+
+## Install typescript
+npm install --global typescript-language-server typescript

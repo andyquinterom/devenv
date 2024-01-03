@@ -8,4 +8,5 @@ export PATH=$HOME/bin:$PATH
 export PATH=/usr/libexec/strongswan:$PATH
 
 . "$HOME/.cargo/env"
-eval "`fnm env`"
+eval "`fnm env --shell bash`"
+fnm use 20

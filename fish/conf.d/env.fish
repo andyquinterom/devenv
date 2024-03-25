@@ -4,6 +4,7 @@ fish_add_path \
     $HOME/.npm-global/bin \
     $HOME/go/bin \
     $HOME/bin \
-    /usr/libexec/strongswan
+    /usr/libexec/strongswan \
+    $HOME/.juliaup/bin/
 
 eval (fnm env --shell fish)

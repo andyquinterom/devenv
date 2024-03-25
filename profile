@@ -10,3 +10,18 @@ export PATH=/usr/libexec/strongswan:$PATH
 . "$HOME/.cargo/env"
 eval "`fnm env --shell bash`"
 fnm use 20
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/andres/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/andres/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<

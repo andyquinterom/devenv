@@ -19,4 +19,4 @@ vim.opt.shell = "/bin/fish"
 -- Appearance
 
 vim.cmd("highlight clear SignColumn")
-vim.cmd("set colorcolumn=100")
+vim.cmd("set colorcolumn=80")

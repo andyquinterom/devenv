@@ -77,7 +77,7 @@ require('lspconfig.ui.windows').default_options = {
 
 -- Setup lspconfig.
 require("lspconfig").pyright.setup{}
-require("lspconfig").r_language_server.setup{
+require("lspconfig").r_language_server.setup {
     root_dir = function(fname)
         return util.root_pattern('renv.lock', 'DESCRIPTION')(fname) or util.find_git_ancestor(fname) or vim.loop.os_homedir()
     end
@@ -93,6 +93,9 @@ require("lspconfig").rust_analyzer.setup{
     	cmd = { "rustup", "run", "stable", "rust-analyzer" },
         settings = {
             ["rust-analyzer"] = {
+                editor = {
+                    formatOnSave = true
+                },
                 check = {
                     command = "clippy"
                 },
@@ -100,7 +103,9 @@ require("lspconfig").rust_analyzer.setup{
         }
 }
 
-require("lspconfig").html.setup { }
+require("lspconfig").html.setup {
+    cmd = { "html-languageserver", "--stdio" }
+}
 
 require("lspconfig").sqlls.setup {
         cmd = { 'sql-language-server', 'up', '--method', 'stdio' },

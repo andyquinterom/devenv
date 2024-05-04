@@ -8,3 +8,5 @@ fish_add_path \
     $HOME/.juliaup/bin/
 
 eval (fnm env --shell fish)
+
+set -gx CARGO_TARGET_DIR $HOME/.cargo/target

@@ -1,8 +1,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 -- Copilot keys need to be set before loading the plugin
-vim.g.copilot_no_tab_map = true
-vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+-- vim.g.copilot_no_tab_map = true
+-- vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 
 return require("packer").startup(function()
 
@@ -60,6 +60,6 @@ return require("packer").startup(function()
 
 
     -- Copilot
-    use("github/copilot.vim")
+    -- use("github/copilot.vim")
 
 end)

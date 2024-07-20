@@ -49,6 +49,8 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 
+bindsym $mod+t exec firefox 'about:profiles'
+
 # kill focused window
 bindsym $mod+Shift+q kill
 

@@ -82,7 +82,6 @@ require("lspconfig").r_language_server.setup {
         return util.root_pattern('renv.lock', 'DESCRIPTION')(fname) or util.find_git_ancestor(fname) or vim.loop.os_homedir()
     end
 }
-require("lspconfig").tsserver.setup{}
 require("lspconfig").java_language_server.setup{
     cmd = { "jdtls" }
 }
@@ -90,7 +89,7 @@ require("lspconfig").cssls.setup{
     cmd = { "css-languageserver", "--stdio" }
 }
 require("lspconfig").rust_analyzer.setup{
-    	cmd = { "rustup", "run", "stable", "rust-analyzer" },
+    	cmd = { "rust-analyzer" },
         settings = {
             ["rust-analyzer"] = {
                 editor = {
@@ -113,7 +112,6 @@ require("lspconfig").sqlls.setup {
         settings = {}
 }
 
-require("lspconfig").tsserver.setup {}
 require("lspconfig").vuels.setup {}
 require("lspconfig").clangd.setup {}
 

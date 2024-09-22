@@ -187,3 +187,10 @@ bar {
 # Brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+# Zoom 
+for_window [class="zoom"] floating enable
+for_window [class="zoom" title="Zoom - Licensed Account"] floating disable
+for_window [class="zoom" title="Zoom Meeting"] floating disable
+for_window [class="zoom" title="Meeting"] floating disable
+for_window [class="zoom" title="Zoom Workplace - Free account"] floating disable

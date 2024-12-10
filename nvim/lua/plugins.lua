@@ -16,6 +16,8 @@ return require("packer").startup(function()
     use("TimUntersberger/neogit")
 
     -- All the things
+    use("hrsh7th/vim-vsnip")
+    use("hrsh7th/vim-vsnip-integ")
     use("neovim/nvim-lspconfig")
     use("hrsh7th/cmp-nvim-lsp")
     use("hrsh7th/cmp-buffer")

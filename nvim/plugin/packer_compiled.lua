@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/andres/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/home/andres/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/home/andres/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/home/andres/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/andres/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
+local package_path_str = "/home/andres/.cache/nvim/packer_hererocks/2.1.1732813678/share/lua/5.1/?.lua;/home/andres/.cache/nvim/packer_hererocks/2.1.1732813678/share/lua/5.1/?/init.lua;/home/andres/.cache/nvim/packer_hererocks/2.1.1732813678/lib/luarocks/rocks-5.1/?.lua;/home/andres/.cache/nvim/packer_hererocks/2.1.1732813678/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/andres/.cache/nvim/packer_hererocks/2.1.1732813678/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -174,11 +174,6 @@ _G.packer_plugins = {
     path = "/home/andres/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/home/andres/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   ["vim-airline"] = {
     loaded = true,
     path = "/home/andres/.local/share/nvim/site/pack/packer/start/vim-airline",
@@ -213,6 +208,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/andres/.local/share/nvim/site/pack/packer/start/vim-rmarkdown",
     url = "https://github.com/vim-pandoc/vim-rmarkdown"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/home/andres/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
+  },
+  ["vim-vsnip-integ"] = {
+    loaded = true,
+    path = "/home/andres/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ",
+    url = "https://github.com/hrsh7th/vim-vsnip-integ"
   }
 }
 
